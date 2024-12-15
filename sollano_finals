@@ -1,0 +1,300 @@
+def Activity1():
+    print('\nHELLO WORLD!')
+
+def Activity2():
+    num1 = eval(input("Enter a number: "))
+    num2 = eval(input("Enter a number: "))
+    answer = num1 + num2
+
+    print(num1, "+" ,num2, "=" ,answer,)
+
+def Activity3():
+    num1 = eval(input("Please enter the first number: "))
+    num2 = eval(input("Please enter the first number: "))
+    result = num1 + num2
+
+    print(result)
+
+def Activity4():
+    number1 = int(input("Enter a number - - - > "))
+    number2 = int(input("Enter another number - - - > "))
+
+    add = number1 + number2
+    product = number1 * number2
+    minus = number1 - number2
+    quotient = number1 / number2
+    exponent = number1 ** number2
+    remainder = number1 % number2
+    floor = number1 // number2
+
+    print("The sum of" ,number1 , " and " , number2 , " is " , add)
+    print("The product of" ,number1 , " and " , number2 , " is " , product)
+    print("The difference of" ,number1 , " and " , number2 , " is " , minus)
+    print("The quotient of" ,number1 , " and " , number2 , " is " , quotient)
+    print("The exponent of" ,number1 , " and " , number2 , " is " , exponent)
+    print("The remainder of" ,number1 , " and " , number2 , " is " , remainder)
+    print("The floor division of" ,number1 , " and " , number2 , " is " , floor)
+
+def Activity5():
+    print("FAHRENHEIT TO CELCIUS CONVERTER")
+
+    temp = eval(input("Enter temperature in Fahrenheit : "))
+
+    celsius = (temp - 32) * 5 / 9
+
+    print("The Conversion of ", temp , "degrees Fahrenheit is ", celsius , "degrees celcius. ")
+
+    print(f"The conversion of {temp} degress Fahrenheit is {celsius} degrees celcius")
+
+    print(round(celsius, 2))
+
+def Activity6():
+    x = 5
+
+    print(x)
+
+    x = x+ 5
+
+    print(x)
+
+    x = x+10
+
+    print(x)
+
+    x = x+35
+
+    print(x)
+
+    x = x-25
+
+    print(x)
+
+def Activity7():
+    gold = 0
+
+    miner = input("Hi, please enter your name - - - > ")
+
+    #answerable by yes or no
+
+    hasMine = input("Do you have a gold ? ")
+
+    if hasMine.lower () == "yes":
+        gold += 10
+        print(f"Please {miner}, you probably doesn't have a gold. I'll give you {gold} gold ")
+
+    else:
+        print(f"Please {miner}, you probably doesn't have a gold. I'll give you {gold} gold ")
+
+
+def Activity8():
+    password = input("Enter your password - - - > ")
+
+    if password.lower() == "secret" :
+        print("Acess Granted")
+        print("Enjoy using the system")
+
+    elif password == "hello world":
+        print("Acess Granted")
+        print("Enjoy using the system")
+
+    else:
+        print("Acess Denied")
+
+    print("Thank you for using the system")
+
+def Activity9():
+    age = eval(input("Enter your age - - - > "))
+
+    if age >= 1 and age <= 7:
+        print("toddler ")
+
+    elif age >= 8 and age <= 13:
+        print("pre teen ")
+
+    elif age >= 14 and age  <= 18:
+        print("teenager")
+
+    elif age >= 19 and age  <= 31:
+        print("early adulthood")
+
+    elif age >= 32 and age  <= 45:
+        print("mid adulthood")
+
+    elif age >= 46 and age <= 59:
+        print("post adulthood")
+
+    elif age >= 60:
+        print("senior")
+
+    else:
+        print("invalid age")
+
+def Activity10():
+    isDLL = input("Are you a current student of DLL (yes/no)  : ")
+
+    if isDLL.lower() == "yes": 
+        print("Welcome to the DLL BSIT scholarship!")
+        isGG = input("Are you from Brgy. Gulang-gulang (yes/no) :")
+
+        if isGG.lower() == "yes" :
+            print("Please fill up the second form ")
+            islevel = input("What is your current year level right now in DLL\nF - Freshman\nS - Sophomore\nJ - Junior\nR - Senior\nPlease input your answer: ")
+
+            if islevel . lower ( ) == "f" :
+                print("Hi, Freshman!" )
+            elif islevel . lower ( ) == "s" :
+                print("Hi, Sophomore!" )
+            elif islevel . lower ( ) == "j" :
+                print("Hi, Junior!" )
+            elif islevel . lower ( ) == "r" :
+                print("Hi, Senior!" )
+            else :
+                print("Invalid choice")
+
+            isNeeded = input("Do you need this Scholarship (yes/no) : ")
+        
+            if isNeeded.lower() == "yes" :
+                print("Scholarship Granted! ")
+            else :
+                print("Thank you for stopping by! ")
+                
+        else :
+            print("Sorry, this Scholarship are only given from the resident of Gulang-gulang")
+    else :
+            print("Thank you for stopping by! ")
+
+def Activity11():
+    for apple in range(1, 51):
+        print("hello, good morning")
+    name = input("Whats your name: ")
+    print(f"Hi, {name}")
+
+def Activity12():
+    for x in range(10, 0, -1):
+        print(x)
+
+def Activity13():
+    num = eval(input("Enter any number: "))
+    factorial = 1
+
+    for abc in range(num, 0, -1):
+        factorial *= abc
+
+    print(f"The factorial of {num} is {factorial} ")
+
+def Activity14():
+    for k in range(0, 11):
+        print(k, end = " ")
+
+    for z in range(0, 11):
+        print("*", end = " ")
+    print()
+
+def Activity15():
+    for i in range(0,21):
+        print(i,end = " ")
+    for t in range(0,i):
+        print("*", end=" ")
+
+    print()
+
+
+def Activity16():
+    for x in range(1,6):
+        for y in range(1, x + 1):
+            print(" ", end =" ")
+    for z in range(6, x, -1):
+        print("$", end =" ")
+
+    print()
+
+
+def Activity17():
+    col = eval(input("Enter a number of colums ----> "))
+
+    for x in range(1,11):
+        for y in range(1, col+1):
+            print(f"{x} x {y} = {x*y}", end = "\t")
+        print()
+
+def Activity18():
+    no = eval(input("Enter a number of triangles ---->"))
+    for x in range(1,5):
+        for r in range(1,no + 1):
+            for y in range(1,x + 1):
+                print("*", end= " ")
+
+            for z in range(5, x, -1):
+                print(" ", end=" ")
+        print()
+
+def Activity19():
+    tuloy = True
+
+    while tuloy == True:
+        name = input("Please enter a name: ")
+
+        if name.lower() == "stop":
+            print("Program Terminated")
+            break
+            tuloy = False
+
+        else:
+            continue
+
+def Activity20():
+    import os
+
+    isContinue = True
+    no = 0
+
+    while isContinue == True:
+        ask = input("Would you like to add another triangle (yes / no) ---->")
+
+        if ask.lower() == "no":
+            print("PROGRAM TERMINATED")
+            break
+
+            isContinue = False
+
+        else:
+            os.system('cls')
+            no += 1
+            for x in range(1,5):
+                for r in range(1, no + 1):
+                    for y in range(1,x, +1):
+                        print("*", end=" ")
+
+                    for z in range(5, x, -1):
+                        print(" ", end=" ")
+                print()
+                continue
+
+
+def Activity21():
+    def say_hello():
+        print("Hello Sollano")
+
+    def say_hello_v2(name):
+        print(f"Hello {name}")
+
+    def activity2():
+        number1 = eval(input("Enter a number: "))
+        number2 = eval(input("Enter another number: "))
+        total = number1 + number2
+        print(number1, " plus ", number2, " = ", total)
+
+    tuloy = True
+    while tuloy:
+        ask = input("Please provide a name: ")
+
+        if ask.lower() != "stop":
+            say_hello_v2(ask)
+            if ask.lower() == "2":
+                activity2()
+            continue
+        
+        else:
+            break
+
+
