@@ -739,3 +739,166 @@ def Code_challenge16():
                 pass
 
 
+def main():
+    tuloy = True
+    while tuloy == True:
+
+        print("\n\t\t\t\t\t\t========================= MAIN MENU =========================")
+        print(" \t\t\t\t\t\t=========== WELCOME TO MY FIRST PROGRAM ON PYTHON ===========")
+        print("\n===================================================================================================================================")
+        print("\n\t\t\t\t\t\t\t\t List of Activities \t\t\t\t\t")
+        print("\n\t\t\t\t\t || A1 = Activity 1\t\t\t A14 = Activity 14 ||\t\t")
+        print("\t\t\t\t\t || A2 = Activity 2\t\t\t A15 = Activity 15 ||\t\t")
+        print("\t\t\t\t\t || A3 = Activity 3\t\t\t A16 = Activity 16 ||\t\t")
+        print("\t\t\t\t\t || A4 = Activity 4\t\t\t A17 = Activity 17 ||\t\t")
+        print("\t\t\t\t\t || A5 = Activity 5\t\t\t A18 = Activity 18 ||\t\t")
+        print("\t\t\t\t\t || A6 = Activity 6\t\t\t A19 = Activity 19 ||\t\t")
+        print("\t\t\t\t\t || A7 = Activity 7\t\t\t A20 = Activity 20 ||\t\t")
+        print("\t\t\t\t\t || A8 = Activity 8\t\t\t A21 = Activity 21 ||\t\t")
+        print("\t\t\t\t\t || A9 = Activity 9\t\t\t A22 = Activity 22 ||\t\t")
+        print("\t\t\t\t\t || A10 = Activity 10\t\t\t A23 = Activity 23 ||\t\t")
+        print("\t\t\t\t\t || A11 = Activity 11\t\t\t A24 = Activity 24 ||\t\t")
+        print("\t\t\t\t\t || A12 = Activity 12\t\t\t A25 = Activity 25 ||\t\t")
+        print("\t\t\t\t\t || A13 = Activity 13\t\t\t\t\t   ||")
+        print("\n================================================================================================================================")
+
+        print("\n\t\t\t\t\t\t\t\t List of Code Challenges \t\t\t\t\t")
+        print("\n\t\t\t\t\t || CC1 = Code Challenge 1\t\t\t CC9 = Code Challenge 9   || \t\t")
+        print("\t\t\t\t\t || CC2 = Code Challenge 2\t\t\t CC1O = Code Challenge 10 ||\t\t")
+        print("\t\t\t\t\t || CC3 = Code Challenge 3\t\t\t CC11 = Code Challenge 11 ||\t\t")
+        print("\t\t\t\t\t || CC4 = Code Challenge 4\t\t\t CC12 = Code Challenge 12 ||\t\t")
+        print("\t\t\t\t\t || CC5 = Code Challenge 5\t\t\t CC13 = Code Challenge 13 ||\t\t")
+        print("\t\t\t\t\t || CC6 = Code Challenge 6\t\t\t CC14 = Code Challenge 14 ||\t\t")
+        print("\t\t\t\t\t || CC7 = Code Challenge 7\t\t\t CC15 = Code Challenge 15 ||\t\t")
+        print("\t\t\t\t\t || CC8 = Code Challenge 8\t\t\t CC16 = Code Challenge 16 ||\t\t")
+
+        y = input("Enter a command:  ")
+        if y == "0" and y == "exit":
+            break
+        else:
+
+            if y.lower() == "a1":
+                Activity1()
+                continue
+            elif y.lower() == "a2":
+                Activity2()
+                continue
+            elif y.lower() == "a3":
+                Activity3()
+                continue
+            elif y.lower() == "a4":
+                Activity4()
+                continue
+            elif y.lower() == "a5":
+                Activity5()
+                continue
+            elif y.lower() == "a6":
+                Activity6()
+                continue
+            elif y.lower() == "a7":
+                Activity7()
+                continue
+            elif y.lower() == "a8":
+                Activity8()
+                continue
+            elif y.lower() == "a9":
+                Activity9()
+                continue
+            elif y.lower() == "a10":
+                Activity10()
+                continue
+            elif y.lower() == "a11":
+                Activity11()
+                continue
+            elif y.lower() == "a12":
+                Activity12()
+                continue
+            elif y.lower() == "a13":
+                Activity13()
+                continue
+            elif y.lower() == "a14":
+                Activity14()
+                continue
+            elif y.lower() == "a15":
+                Activity15()
+                continue
+            elif y.lower() == "a16":
+                Activity16()
+                continue
+            elif y.lower() == "a17":
+                Activity17()
+                continue
+            elif y.lower() == "a18":
+                Activity18()
+                continue
+            elif y.lower() == "a19":
+                Activity19()
+                continue
+            elif y.lower() == "a20":
+                Activity20()
+                continue
+            elif y.lower() == "a21":
+                Activity21()
+                continue
+            elif y.lower() == "a22":
+                Activity22()
+                continue
+            elif y.lower() == "a23":
+                activity23()
+                continue
+            elif y.lower() == "a24":
+                Activity24()
+                continue
+            elif y.lower() == "a25":
+                Activity25()
+                continue
+            elif y.lower() == "cc1":
+                Code_challenge1()
+                continue
+            elif y.lower() == "cc2":
+                Code_challenge2()
+                continue
+            elif y.lower() == "cc3":
+                Code_challenge3()
+                continue
+            elif y.lower() == "cc4":
+                Code_challenge4()
+                continue
+            elif y.lower() == "cc5":
+                Code_challenge5()
+                continue
+            elif y.lower() == "cc6":
+                Code_challenge6()
+                continue
+            elif y.lower() == "cc7":
+                Code_challenge7()
+                continue
+            elif y.lower() == "cc8":
+                Code_challenge8()
+                continue
+            elif y.lower() == "cc9":
+                Code_challenge9()
+                continue
+            elif y.lower() == "cc10":
+                Code_challenge10()
+                continue
+            elif y.lower() == "cc11":
+                Code_challenge11()
+                continue
+            elif y.lower() == "cc12":
+                Code_challenge12()
+                continue
+            elif y.lower() == "cc13":
+                Code_challenge13()
+                continue
+            elif y.lower() == "cc14":
+                Code_challenge14()
+                continue
+            elif y.lower() == "cc15":
+                Code_challenge15()
+                continue
+            elif y.lower() == "cc16":
+                Code_challenge16()
+                continue
+
+main()
