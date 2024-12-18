@@ -1,306 +1,324 @@
-def Activity1():
-    print('\nHELLO WORLD!')
+def activity1():
+    print("Hello World!")
 
-def Activity2():
-    num1 = eval(input("Enter a number: "))
-    num2 = eval(input("Enter a number: "))
-    answer = num1 + num2
+def activity2():
+    name = input("Please enter your name --->  ")
 
-    print(num1, "+" ,num2, "=" ,answer,)
+    print("Hi, " + name + ", good afternoon!")
 
-def Activity3():
-    num1 = eval(input("Please enter the first number: "))
-    num2 = eval(input("Please enter the first number: "))
-    result = num1 + num2
+def activity3():
+    name = input("Please input your name here ---> ")
+    fname = input("Please input your fname here ---> ")
+    mname = input("Please input your mname here ---> ")
+    birthdate = input("Please input your birth date here ---> ")
+    birthmonth = input("Please input your birthmonth here ---> ")
+    birthyear = input("Please input your birthyear here ---> ")
+    maritalstatus = input("Please input your maritalstatus here ---> ")
+    religion = input("Please input your religion here ---> ")
+    ethnicity = input("Please input your ethnicity here ---> ")
+    mobile = input("Please input your mobile here ---> ")
+    email = input("Please input your email here ---> ")
+    gender = input("Please input your gender here ---> ")
+    address = input("Please input your address here ---> ")
+    age = input(" Please input your age here ---> ")
 
-    print(result)
+    print("\n\n\n\n\tHello, My name is,", name ,"I'm", age ,"yrs old.\n\tI identify as", gender ,"\n\tMy father's name is", fname ,"\n\tMy mother's name is", mname ,"\n\tMy Bithday is in", birthmonth , birthdate , birthyear ,"\n\tI live in", address,"\n\tI am", maritalstatus ,"\n\tI am", ethnicity ,"Citizen\n\tMy mobile number is:", mobile ,"\n\tYou may contact me in my email:", email ,"\n\tThank You!!!\n\n\n")
 
-def Activity4():
-    number1 = int(input("Enter a number - - - > "))
-    number2 = int(input("Enter another number - - - > "))
+def activity4():
+    number1 = eval(input("Enter a number : "))
+    number2 = eval(input("Enter another number : "))
 
-    add = number1 + number2
+    sum = number1 + number2
+    difference = number1 - number2
     product = number1 * number2
-    minus = number1 - number2
     quotient = number1 / number2
     exponent = number1 ** number2
-    remainder = number1 % number2
-    floor = number1 // number2
+    reminder = number1 % number2
+    floordivision = number1 // number2
 
-    print("The sum of" ,number1 , " and " , number2 , " is " , add)
-    print("The product of" ,number1 , " and " , number2 , " is " , product)
-    print("The difference of" ,number1 , " and " , number2 , " is " , minus)
-    print("The quotient of" ,number1 , " and " , number2 , " is " , quotient)
-    print("The exponent of" ,number1 , " and " , number2 , " is " , exponent)
-    print("The remainder of" ,number1 , " and " , number2 , " is " , remainder)
-    print("The floor division of" ,number1 , " and " , number2 , " is " , floor)
+    print("The sum of" , number1 , "and" , number2 , "is" , sum)
+    print("The difference of" , number1 , "and" , number2 , "is" , difference)
+    print("The product of" , number1  , "and" , number2 , "is" , product)
+    print("The quotient of" , number1 , "and" , number2 , "is" , quotient)
+    print("The exponent of" , number1 , "and" , number2 , "is" , exponent)
+    print("The reminder of" , number1 , "and" , number2 , "is" , reminder)
+    print("The floor division of" , number1 , "and" , number2 , "is" , floordivision)
 
-def Activity5():
+def activity5():
     print("FAHRENHEIT TO CELCIUS CONVERTER")
 
-    temp = eval(input("Enter temperature in Fahrenheit : "))
+    temp = eval(input("Enter temperature in Fahrenheit: "))
 
-    celsius = (temp - 32) * 5 / 9
+    celsius = (temp - 32) * 5/9
 
-    print("The Conversion of ", temp , "degrees Fahrenheit is ", celsius , "degrees celcius. ")
+    print(f"The Conversion of {temp} degrees Fahrenheit is {round(celsius, 2)} degree celsius.")
 
-    print(f"The conversion of {temp} degress Fahrenheit is {celsius} degrees celcius")
+def activity6():
+    #assignment operator activity
 
-    print(round(celsius, 2))
-
-def Activity6():
-    x = 5
+    x = 10
 
     print(x)
 
-    x = x+ 5
+    #how to update the value of x 
+
+    x = x + 2
 
     print(x)
 
-    x = x+10
+    #simplified version
+    x += 4
+    print(x) 
 
+    x += 6
     print(x)
 
-    x = x+35
-
+    #other arithmetic
+    x -= 8
     print(x)
 
-    x = x-25
-
+    #other arithmetic
+    x *= 10
     print(x)
 
-def Activity7():
+    #other arithmetic
+    x /= 12
+    print(x)
+
+def activity7():
+    #conditional statements
+
     gold = 0
 
-    miner = input("Hi, please enter your name - - - > ")
+    miner = input("Hi, please enter your name :")
 
     #answerable by yes or no
 
-    hasMine = input("Do you have a gold ? ")
+    hasMine = input("Did you mine gold today?")
 
-    if hasMine.lower () == "yes":
-        gold += 10
-        print(f"Please {miner}, you probably doesn't have a gold. I'll give you {gold} gold ")
+    #introduction to decision structure and relational operators
 
-    else:
-        print(f"Please {miner}, you probably doesn't have a gold. I'll give you {gold} gold ")
+    if hasMine.lower() == "yes":
+        gold += 1
+        print(f"Hi, {miner}, today you have a total of {gold} gold.")
+    else: 
+        print(f"Hi, {miner}, today you have a total of {gold} gold.")
 
+def activity8():
+    password = input("Enter your password:  ")
 
-def Activity8():
-    password = input("Enter your password - - - > ")
+    if password.lower() == "allysakim123":
+        print("Your password is correct. Try again.")
+        print("Enjoy using the system.")
 
-    if password.lower() == "secret" :
-        print("Acess Granted")
-        print("Enjoy using the system")
+    elif password.lower() == "password":
+        print("Access Granted.")
+        print("Enjoy using the system.")
 
-    elif password == "hello world":
-        print("Acess Granted")
-        print("Enjoy using the system")
-
-    else:
-        print("Acess Denied")
-
-    print("Thank you for using the system")
-
-def Activity9():
-    age = eval(input("Enter your age - - - > "))
-
-    if age >= 1 and age <= 7:
-        print("toddler ")
-
-    elif age >= 8 and age <= 13:
-        print("pre teen ")
-
-    elif age >= 14 and age  <= 18:
-        print("teenager")
-
-    elif age >= 19 and age  <= 31:
-        print("early adulthood")
-
-    elif age >= 32 and age  <= 45:
-        print("mid adulthood")
-
-    elif age >= 46 and age <= 59:
-        print("post adulthood")
-
-    elif age >= 60:
-        print("senior")
-
-    else:
-        print("invalid age")
-
-def Activity10():
-    isDLL = input("Are you a current student of DLL (yes/no)  : ")
-
-    if isDLL.lower() == "yes": 
-        print("Welcome to the DLL BSIT scholarship!")
-        isGG = input("Are you from Brgy. Gulang-gulang (yes/no) :")
-
-        if isGG.lower() == "yes" :
-            print("Please fill up the second form ")
-            islevel = input("What is your current year level right now in DLL\nF - Freshman\nS - Sophomore\nJ - Junior\nR - Senior\nPlease input your answer: ")
-
-            if islevel . lower ( ) == "f" :
-                print("Hi, Freshman!" )
-            elif islevel . lower ( ) == "s" :
-                print("Hi, Sophomore!" )
-            elif islevel . lower ( ) == "j" :
-                print("Hi, Junior!" )
-            elif islevel . lower ( ) == "r" :
-                print("Hi, Senior!" )
-            else :
-                print("Invalid choice")
-
-            isNeeded = input("Do you need this Scholarship (yes/no) : ")
-        
-            if isNeeded.lower() == "yes" :
-                print("Scholarship Granted! ")
-            else :
-                print("Thank you for stopping by! ")
-                
-        else :
-            print("Sorry, this Scholarship are only given from the resident of Gulang-gulang")
     else :
-            print("Thank you for stopping by! ")
+        print("Your password is incorrect.")
 
-def Activity11():
-    for apple in range(1, 51):
-        print("hello, good morning")
-    name = input("Whats your name: ")
-    print(f"Hi, {name}")
+    print("Thank you so much.")
 
-def Activity12():
-    for x in range(10, 0, -1):
-        print(x)
+def activity9():
+    age = eval(input("Enter your age: "))
 
-def Activity13():
-    num = eval(input("Enter any number: "))
-    factorial = 1
+    if age >= 1 and age <= 7 :
+        print("You are considered Toddler.")
+    elif age >= 8 and age <= 13:
+        print("You are considered Pre-Teen.")
+    elif age >= 14 and age <= 18 :
+        print("You are considered Teenager.")
+    elif age >= 19 and age <= 31:
+        print("You are considered Early Adulthood.")
+    elif age >= 32 and age <= 45 :
+        print("You are considered Mid Adulthood.")
+    elif age >= 46 and age <= 59 :
+        print("You are considered Post Adulthood.")
+    elif age >= 60 :
+        print("You are considered Senior.")
+    else :
+        print ("Sorry, we cannot find the age you entered. Try again.")
 
-    for abc in range(num, 0, -1):
-        factorial *= abc
+def activity10():
+    #create a program for scholarship grant for DLL BSIT student
 
-    print(f"The factorial of {num} is {factorial} ")
+    isDLL = input("Are you a current student of DLL [yes / no] :  ")
 
-def Activity14():
-    for k in range(0, 11):
-        print(k, end = " ")
+    if isDLL.lower() == "yes" :
+        print("Welcome to the DLL Scholarship form. ")
 
-    for z in range(0, 11):
-        print("*", end = " ")
-    print()
+        isPB = input("Are you a resident from Pagbilao? [yes / no] : ")
 
-def Activity15():
-    for i in range(0,21):
-        print(i,end = " ")
-    for t in range(0,i):
-        print("*", end=" ")
+        if isPB.lower() == "yes" :
+            print("Thank you. Now, proceed to the question below. ")
 
-    print()
+            isLevel = input("What is your current year level at DLL? \nF - Freshman\nSo - Sophomore\nJ - Junior\nS - Senior\nPlease input your answer : ")
+            if isLevel.lower() == 'f' :
+                print("Welcome, freshman." )
+            elif isLevel.lower() == 'sp' :
+                print("Welcome, sophomore." )
+            elif isLevel.lower() == 'j' :
+                print("Welcome, junior." )
+            elif isLevel.lower() == 's' :
+                print("Welcome, senior.")
+            else :
+                print("They keyword you input is invalid.")
+        else :
+            print("Sorry, this scholarship form is only for residents of Pagbilao.")
 
+        isNeeded = input("Do you need this scholarship? [yes / no] : ")
+        
+        if isNeeded.lower() == "yes" : 
+            print("Welcome to this platform. ")
+        else : 
+            print("Thank you for stopping by. See you next time." )
 
-def Activity16():
-    for x in range(1,6):
-        for y in range(1, x + 1):
-            print(" ", end =" ")
-    for z in range(6, x, -1):
-        print("$", end =" ")
+    else :	
+        print("Sorry, this scholarship is only for DLL students.")
 
-    print()
+def activity11():
+    #Print hello world 10 times
 
+    for cycles in range (1, 11):
+        print("Hello World!")
+        print("Happy Foundation Day.")
+        name = input("What is your name? --->  ")
+        print(f"Hi, {name}.")
 
-def Activity17():
-    col = eval(input("Enter a number of colums ----> "))
+def activity12():
+    #starting point is 10
+    #stopping point is 1
 
-    for x in range(1,11):
-        for y in range(1, col+1):
-            print(f"{x} x {y} = {x*y}", end = "\t")
+    for cycle in range (10, 0, -1):
+        print(cycle)
+
+def activity13():
+    #Factorial
+
+    num = eval(input("Enter a number -->  "))
+    factor = 1
+    for x in range (num, 0, -1):
+        factor *= x
+
+    print(f"The factorial of {num} is {factor}.")
+
+def activity14():
+    #washing machine
+    #setting
+
+    for x in range (0, 11):
+        print(x , end= " ")
+        for y in range (0, 11):
+            print("<3" , end= " ")
         print()
 
-def Activity18():
-    no = eval(input("Enter a number of triangles ---->"))
-    for x in range(1,5):
-        for r in range(1,no + 1):
-            for y in range(1,x + 1):
-                print("*", end= " ")
+def activity15():
+    for x in range (0 , 20):
+        print(x , end= " ")
+    for y in range (0 , x):
+        print("<3" , end= " ")
+    print()
 
-            for z in range(5, x, -1):
+def activity16():
+    for x in range (1, 6):
+        for y in range (1, x + 1):
+            print(" ", end=" ")
+        for z in range (6, x, -1):
+            print(" * ", end=" ")
+        print()
+
+def activity17():
+    c = eval(input("Enter number of columns:  "))
+
+    for x in range (1, 11):
+        for y in range (1, c + 1):
+            print(f"{x} x {y} = {x*y}", end=" \t")
+        print()
+
+def activity18():
+    tri = eval(input("Enter number of triangles:  "))
+    
+    for a in range (1, 5):
+        for b in range (1, tri + 1):
+            for c in range (1, a + 1):
+                print("*", end=" ")
+            for d in range (5, a, -1):
                 print(" ", end=" ")
         print()
 
-def Activity19():
-    tuloy = True
+def activity19():
+        #boolean variable/trigger
+        cont = True
 
-    while tuloy == True:
-        name = input("Please enter a name: ")
+        #keyword while
+        while cont == True:
+            name = input("Enter a name: ")
 
-        if name.lower() == "stop":
-            print("Program Terminated")
-            break
-            tuloy = False
+        #stopping point
+            if name.lower() == "stop":
+                print("Program Terminated")
+                break
+                cont = False
+            else :
+                continue
 
-        else:
-            continue
-
-def Activity20():
+def activity20():
     import os
-
-    isContinue = True
+    isProceed = True 
     no = 0
-
-    while isContinue == True:
-        ask = input("Would you like to add another triangle (yes / no) ---->")
-
+    
+    while isProceed == True:
+        ask = input("Would you like to add another triangle? (yes/no) --->  ")
+    
         if ask.lower() == "no":
             print("PROGRAM TERMINATED")
             break
-
-            isContinue = False
-
+            isProceed = False
         else:
-            os.system('cls')
+            os.system("cls")
             no += 1
-            for x in range(1,5):
-                for r in range(1, no + 1):
-                    for y in range(1,x, +1):
-                        print("*", end=" ")
-
-                    for z in range(5, x, -1):
+            for a in range(1, 5):
+                for b in range(1, no + 1):
+                    for c in range(1, b + 1):
+                        print("*", end = " ")
+                    for d in range(5, b, -1):
                         print(" ", end=" ")
                 print()
-                continue
+            continue
 
+def activity21():
+    def func_goodmorning():
+        print("Good morning!")
 
-def Activity21():
-    def say_hello():
-        print("Hello Sollano")
+    def func_goodmorning_v2(name):
+        print(f"Good morning, {name}")
 
-    def say_hello_v2(name):
-        print(f"Hello {name}")
+    def activity13():
+        #Factorial
 
-    def activity2():
-        number1 = eval(input("Enter a number: "))
-        number2 = eval(input("Enter another number: "))
-        total = number1 + number2
-        print(number1, " plus ", number2, " = ", total)
+        num = eval(input("Enter a number -->  "))
+        factor = 1
+        for x in range (num, 0, -1):
+            factor *= x
+        print(f"The factorial of {num} is {factor}.")
 
     tuloy = True
-    while tuloy:
-        ask = input("Please provide a name: ")
+
+    while tuloy == True:
+        ask = input("Enter a name:  ")
 
         if ask.lower() != "stop":
-            say_hello_v2(ask)
-            if ask.lower() == "2":
-                activity2()
+            func_goodmorning_v2(ask)
+            if ask == "13":
+                activity13()
             continue
-        
+
         else:
             break
 
-
-def Activity22():
-    #Name listing and then count names
-
+def activity22():
+    #name listing and then count names
     loop = True
     names = []
     while loop == True:
@@ -314,17 +332,23 @@ def Activity22():
 
 def activity23():
     def factorial(number):
+        """ This function's purpose is to compute/calculate the factorial of any number given """
         fact = 1
-        for k in range(number, 0, -1):
-            fact *= 1
+        for x in range(number, 0, -1):
+            fact *= x
+
         return fact
 
-def Activity24():
-    from Activity23_sample import factorial
-    print(f"The Factorial of 4 is {factorial(4)}")
+    print(f"The factorial of 12 is {factorial(12)}.")
 
-def Activity25():
-    courses = ["BSIT", "BSA", "BSAIS", "BSTVTED", "BSSW", "BSPA", "Delete w/o index", "Delete with index"]
+def activity24():
+    from Activity23_sample import factorial
+
+    print(f"The factorial of 12 is {factorial(12)}. ")
+
+def activity25():
+    #python list
+    courses = ["BSIT", "BSA", "BSAIS", "BTVTED", "BSSW", "BSPA", "Delete w/o index", "Delete with index"]
 
     courses.remove("Delete w/o index")
     courses.pop()
@@ -333,336 +357,248 @@ def Activity25():
 
     print(courses)
 
-def Code_challenge1():
-    print("\n\t\t\t\t\t\t\t\t\t\t* \n\t\t\t\t\t\t\t\t\t\t\b*** \n\t\t\t\t\t\t\t\t\t\t\b\b***** \n\t\t\t\t\t\t\t\t\t\t\b*** \n\t\t\t\t\t\t\t\t\t\t*")
-
-
-def Code_challenge2():
-    name = input("Enter your name: ")
-
-    print(f"\n\t\t\t\t\t\t\t\t\t\t* \n\t\t\t\t\t\t\t\t\t\t\b*** \n\t\t\t\t\t\t\t\t\t\t\b\b*{name}* \n\t\t\t\t\t\t\t\t\t\t\b*** \n\t\t\t\t\t\t\t\t\t\t*")
-
-
-def Code_challenge3():
-    Name = input("PLEASE INPUT YOUR NAME : ")
-                          
-    Nickname = input("PLEASE INPUT YOUR NICKNAME : ")
-
-    Age = input("PLEASE INPUT YOUR AGE : ")
-
-    Birthmonth = input("PLEASE INPUT YOUR BIRTHMONTH : ")
-
-    Birthday = input("PLEASE INPUT YOUR BIRTHDAY : ")
-
-    Birthyear = input("PLEASE INPUT YOUR BIRTHYEAR : ")
-
-    Gender = input("PLEASE INPUT YOUR GENDER : ")
-
-    Address = input("PLEASE INPUT YOUR ADDRESS : ")
-
-    Nationality = input("PLEASE INPUT YOUR NATIONALITY : ")
-
-    isMarried = False
-
-    CivilStatus = input("PLEASE INPUT YOUR CIVILSTATUS : ")
-
-    Religion = input("PLEASE INPUT YOUR RELIGION : ")
-
-    Citizenship = input("PLEASE INPUT YOUR CITIZENSHIP : ")
-
-    Height = input("PLEASE INPUT YOUR HEIGHT : ")
-
-    Weight =  input("PLEASE INPUT YOUR WEIGHT : ")
-
-    NameofFather = input("PLEASE INPUT YOUR NAMEOFFATHER : ")
-
-    OccupationofFather = input("PLEASE INPUT YOUR OCCUPATIONOFFATHER : ")
-
-    ContactNumberofFather = input("PLEASE INPUT YOUR CONTACTNUMBEROFFATHER : ")
-
-    NameofMother = input("PLEASE INPUT YOUR NAMEOFMOTHER : ")
-
-    OccupationofMother = input("PLEASE INPUT YOUR OCCUPATIONOFMOTHER : ")
-
-    ContactNumberofMother = input("PLEASE INPUT YOUR CONTACTNUMBEROFMOTHER : ")
-
-    Elementary = input("PLEASE INPUT YOUR ELEMENTARY : ")
-
-    YearAttendedElementary = input("PLEASE INPUT YOUR YEARATTENDEDELEMENTARY : ")
-
-    YearEndedElementary = input("PLEASE INPUT YOUR YEARENDEDELEMENTARY : ")
-
-    HighSchool = input("PLEASE INPUT YOUR HIGHSCHOOL : ")
-
-    YearAttendedHighSchool = input("PLEASE INPUT YOUR YEARATTENDEDHIGHSCHOOL : ")
-
-    YearEndedHighSchool = input("PLEASE INPUT YOUR YEARENDEDHIGHSCHOOL : ")
-
-    College = input("PLEASE INPUT YOUR COLLEGE : ")
-
-    Course = input("PLEASE INPUT YOUR COURSE : ")
-
-    Skills = input("PLEASE INPUT YOUR SKILLS : ")
-
-
-    print("My name is " + Name + ", I am often referred to as " + Nickname + ".\nI am " ,Age, " years old, born in " + Birthmonth + " on " + Birthday + ", " + Birthyear + ".\nI currently reside at " + Address + ".\nI am " + Gender + " by gender and my religion is " + Religion + "." + "\nMy nationality is " + Nationality + ", and I hold " + Citizenship + " citizenship" + ".\nIt is " ,isMarried, "that I am married and my civil status is " + CivilStatus + ".\nMy height is" ,Height, "in cm and I weigh" ,Weight,"in kg." + "\nMy father is " + NameofFather + ", works as a " + OccupationofFather + ".\nHe can be reached at " ,ContactNumberofFather,"\b.\nMy mother name is " + NameofMother + ", is employed as a " + OccupationofMother + "\b.\nShe can be reached at " ,ContactNumberofMother, "\nIn terms of my Educational Background,\nI completed my elementary education at " + Elementary + " from " ,YearAttendedElementary,"to",YearEndedElementary,"\b.\nI then attended High School in " + HighSchool + " from " ,YearAttendedHighSchool,"to",YearEndedHighSchool,"\b.\nI pursued higher education at " + College + ", where I studied " + Course + ".\nI have developed skills in " + Skills + ".\nDeveloping these skills will help me navigate complex situations, enhance my professional growth,\nand contribute more effectively goals.")
-
-
-
-def Code_challenge4():
-    number1 = eval(input("Enter a number --> "))
-
-    number2 = eval(input("Enter a number --> "))
-
-
-    answer1 = number1 + number2
-
-    answer2 = number1 - number2
-
-    answer3 = number1 * number2
-
-    answer4 = number1/number2
-
-    answer5 = number1 ** number2
-
-    answer6 = number1 % number2
-
-    answer7 = number1 // number2
-
-    print("The sum of", number1, "and", number2, "is", answer1)
-
-    print("The difference of", number1, "and", number2, "is", answer2)
-
-    print("The product of", number1, "and", number2, "is", answer3)
-
-    print("The quotient of", number1, "and", number2, "is", answer4) 
-
-    print("The exponent by", number1, "and", number2, "is", answer5)
-
-    print("The remainder of", number1, "and", number2, "is", answer6)
-
-    print("The floor division of", number1,"and", number2, "is", answer7)
-
-
-def Code_challenge5():
-    bank_name = input("Please Input your Bank Account Name: ")
-    bad = eval(input("Please Enter Amount to Deposit:       "))
-
-    dp1 = bad // 1000
-    n1 = bad % 1000
-    dp2 = n1 // 500
-    n2 = n1 % 500
-    dp3 = n2 // 200
-    n3 = n2 % 200
-    dp4 = n3 // 100
-    n4 = n3 % 100
-    dp5 = n4 // 50
-    n5 = n4 % 50
-    dp6 = n5 // 20
-    n6 = n5 % 20
-    dp7 = n6 // 10
-    n7 = n6 % 10
-    dp8 = n7 // 5
-    n8 = n7 % 5
-    dp9 = n8 // 1
-
-    # Define the width for each column
-    width = 15
-
-    print('-' * (width * 2))
-    print(f"{'Amount':<{width}} | {'          Count':<{width}}")
-    print('-' * (width * 2))
-    print(f"{'1000':<{width}} |{dp1:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'500':<{width}} |{dp2:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'200':<{width}} |{dp3:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'100':<{width}} |{dp4:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'50':<{width}} |{dp5:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'20':<{width}} |{dp6:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'10':<{width}} |{dp7:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'5':<{width}} |{dp8:>{width}}")
-    print('-' * (width * 2))
-    print(f"{'1':<{width}} |{dp9:>{width}}")
-    print('-' * (width * 2))
-
-
-def Code_challenge6():
-    prelim = eval(input("Please enter your grades in prelim: "))
-    midterm = eval(input("Please enter your grades in midterm: "))
-    semi_final = eval(input("Please enter your grades in semi_final: "))
-    final = eval(input("Please enter your grades in final: "))
-    quiz = eval(input("Please enter your grades in quiz: "))
-    project = eval(input("Please enter your grades in project: "))
-
-    finalgrade = (prelim * .15) + (midterm * .15) + (semi_final * .15) + (final * .15) + (quiz * .15) + (project * .15)
-
-    totalgrade = round(finalgrade, 2)
-
-    print(f"Your total grade is {totalgrade}")
-
-    if finalgrade > 100:
-        print("INVALID GRADE!")
-    elif finalgrade >= 74 and finalgrade <= 100:
-        print("Congratulations! You passed the course!")
-    else: 
-        print("Sorry, you failed!")
-
-
-def Code_challenge7():
-    customer_name = input("Enter the customer's name here: ")
-    customer_age = eval(input("Enter the customer's age" ))
-    grocery = input("Have you ever done your groceries? (yes/no) ")
-
-    if grocery.lower() == "yes":
-        print("Proceed in buying groceries")
-        item = input("What is the name of the item: ")
-        price = eval(input("What is the price of the item: "))
-        payment = eval(input("What is the amount given: "))
+def code_challenge1():
+    print("\t\t\t\t\t\t\t\t\t\t*\n\n\t\t\t\t\t\t\t\t\t*\t*\t*\n\n\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\n\t\t\t\t\t\t\t*\t*\t*\t*\t*\t*\t*\n\n\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\n\t\t\t\t\t\t\t\t\t*\t*\t*\n\n\t\t\t\t\t\t\t\t\t\t*")
+
+def code_challenge2():
+    name = input("What is your name:")
+
+    print("\t\t\t\t\t\t\t\t\t\t*\n\n\t\t\t\t\t\t\t\t\t*\t*\t*\n\n\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\n\t\t\t\t\t\t\t*\t\t ","Hi !", name ,"\t\t\t*\n\n\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\n\t\t\t\t\t\t\t\t\t*\t*\t*\n\n\t\t\t\t\t\t\t\t\t\t*")
+
+def code_challenge3():
+    fullname = input("Enter your fullname:")
+    age = input("Enter your age:")
+    birthmonth = input("Enter your birthmonth:")
+    birthday = input("Enter your birthday:")
+    birthyear = input("Enter your birthyear:")
+    birthplace = input("Enter your birthplace:")
+    address = input("Enter your address:")
+    citizenship = input("Enter your citizenship:")
+    status = input("Enter your status:")
+
+    print("Hi ! , My name is " + fullname + " and I'm "+ age + " years old. I was born on " , birthmonth , birthday , birthyear , " in " , birthplace ,". I lived in " + address +". I'm a " + citizenship + " and I'm " , status+ ".")
+
+def code_challenge4():
+    number1 = eval(input("Enter the first number:"))
+    number2 = eval(input("Enter another number:"))
+
+    sum = number1 + number2
+    difference = number1 - number2
+    product = number1 * number2
+    quotient = number1 / number2
+    exponent = number1 ** number2
+    reminder = number1 % number2
+    floordivision = number1 // number2
+
+    print("The sum of" , number1 , "and" , number2 , "is" , sum)
+    print("The difference of" , number1 , "and" , number2 , "is" , difference)
+    print("The product of" , number1 , "and" , number2 , "is" , product)
+    print("The quotient of" , number1 , "and" , number2 , "is" , quotient)
+    print(number1 , "exponent by" , number2 , "is" , exponent)
+    print("The reminder of" , number1 , "and", number2 , "is" , reminder)
+    print("The floor division of" , number1 , "and" , number2 , "is" , floordivision)
+
+def code_challenge5():
+    pera = eval(input("Enter amount to deposit:"))
+    print("-------------------------------------")
+
+    libo = pera // 1000
+    libo_sukli = pera - (libo * 1000)
+    five_h = libo_sukli // 500
+    fiveh_sukli = libo_sukli - (five_h * 500)
+    two_h = fiveh_sukli // 200
+    twoh_sukli = fiveh_sukli - (two_h * 200)
+    one_h = twoh_sukli // 100
+    oneh_sukli = twoh_sukli - (one_h * 100)
+    fifty = oneh_sukli // 50
+    fifty_sukli = oneh_sukli - (fifty * 50)
+    twenty = fifty_sukli // 20
+    twenty_sukli = fifty_sukli - (twenty * 20)
+    ten = twenty_sukli // 10
+    ten_sukli = twenty_sukli - (ten * 10)
+    five = ten_sukli // 5
+    five_sukli = ten_sukli - (five * 5)
+    one = five_sukli // 1
+    one_sukli = five_sukli - (one * 1)
+
+    print(libo , "- 1000")
+    print(five_h , "- 500")
+    print(two_h , "- 200")
+    print(one_h , "- 100")
+    print(fifty , "- 50")
+    print(twenty , "- 20")
+    print(ten , "- 10")
+    print(five , "- 5")
+    print(one , "- 1")
+
+def code_challenge6():
+    #compute final grades
+
+    prelim = eval(input("Prelim Grade ---> "))
+    midterm = eval(input("Midterm Grade ---> "))
+    semis = eval(input("Semi-Finals Grade ---> "))
+    finals = eval(input("Finals Grade ---> "))
+    quiz = eval(input("Quiz Grade ---> "))
+    project = eval(input("Project Grade ---> "))
+
+    #Nested Condition 
+    if (prelim >= 65 and prelim <= 100) and (midterm >= 65 and midterm <= 100) and (semis >= 65 and semis <= 100) and (finals >= 65 and finals <= 100) and (quiz >= 65 and quiz <= 100) and (project >= 65 and project <= 100):
+        FG = (prelim * 0.15) + (midterm * 0.15) + (semis * 0.15) + (finals * 0.15) + (quiz * 0.25) + (project * 0.15) 
+        if FG >= 75 :
+            print ("Congratulations, you passed the course/subject.")
+        else :
+            print("Sorry, you failed. Better luck next time.")
+    else : 
+        print("The grade is invalid.")
+
+def code_challenge7():
+    #grocery
+    nameCustomer = input("Enter the customer's name :  ")
+    ageCustomer = eval(input("Enter the customer's age : "))
+    dGrocery = input("Did you buy a grocery? [yes/no] : ")
+
+    if dGrocery.lower() == "yes":
+        print("\n\t\t\tWelcome, enjoy buying groceries!")
+        item = input("What item did you buy? :  ")
+        price_item = float(input("How much is the item? :   "))
+        money = float(input("How much do you like to pay? :   "))
         
-        if customer_age >= 60:
-            total = price + (price * 0.123)
-            tax = price * 0.123
-            discount = tax * 0.123
-            total_discount = total - discount
-            discount_change = payment - total_discount
-            discount_change = round(discount_change, 3)
-            print("Senior discount of 5.2% is being applied from the total price")
-            print("Hi {name}, you purchase {item} with a price of {price} plus a 12.3% tax {tax} and a 5.2% senior discount")
+        if ageCustomer >= 60:
+            taxed = price_item + (price_item * 0.123)
+            total = taxed
+            change = money - total
+            discount = taxed * 0.052
+            isDiscounted = total - discount
+            changeD = money - isDiscounted 
+            print("You can have senior discount of 5.2% from the total price." )
+            print(f"Hi, {nameCustomer}, you purchased {item} with the a price of {price_item} plus 12.3% taxed {taxed} minus 5.2% total discount. \nTotal : {isDiscounted} \nAmount Given : {money} \nChange : {round(changeD,2)}")
             
-            print("Total of {discount} \nAmount given: {amount} \nChange: {Change} ")
-            
-        elif customer_age <= 59:
-            total = price + (price * 0.123)
-            tax = price * 0.123
-            discount_change = payment - total
-            discount_change= round(discount_change, 3)
-            print(f"Hi {customer_name}, you purchase {item} with a price {price} plus a 12.3% tax {tax}")
-                
-            print(f"Total of: {total} \nPayment given: {payment} \nChange: {discount_change} ")
-                
-        else:
-            print("Thank you for stopping by! ")
+        elif ageCustomer <= 59:
+            taxed = price_item + (price_item * 0.123)
+            total = taxed
+            change = money - total
+            print("You are ineligible for the senior discount.")
+            print(f"Hi, {nameCustomer}, you purchased {item} with the price of {price_item} plus 12.3% tax {taxed}. \nTotal : {total} \nAmount Given: {money} \nChange : {round(change,2)}")
+    else:
+        print("Thank you for coming! ")
 
+def code_challenge8():
+    #fetch 10 numbers from the users
+    #get the summation of all the numbers
 
-def Code_challenge8():
     odd = 0
     even = 0
     sum = 0
-
-    for abc in range (1,11):
-        num = eval(input(f"Enter a number {abc}: "))
+    for x in range (1, 11):
+        num = eval(input(f"Enter #{x} :"))
         sum += num
         if num % 2 == 0:
             even += num
         else:
             odd += num
 
-    print(f"The sum of all numbers is {sum}")
-    print(f"The sum of all numbers is {even}")
-    print(f"The sum of all numbers is {odd}")
+    print(f"The sum of all the numbers given is {sum}.")
+    print(f"The sum of all the odd numbers given is {odd}.")
+    print(f"The sum of all the even numbers given is {even}.")
 
+def code_challenge9():
+    n = eval(input("enter any number --- >  "))
 
-def Code_challenge9():
-    for x in range(11, 0, -1):
-        for y in range(x, 0, -1):
-            print("*", end = " ")
-    print()
-
-
-def Code_challenge10():
-    for x in range(10,1,-1):
-        for y in range(x,10):
+    for r in range(n,0,-1):
+        for i in range(n,r,-1):
             print(" ",end=" ")
-        for a in range(1,x):
-            print("*",end=" ")
-            
+        print("* "* r)
+
+def code_challenge10():
+    #arrow head up
+    for x in range (1, 6):
+        for y in range (6, x, -1):
+            print(" ", end=" ")
+        for z in range (1, x + 1):
+            print("*", end=" ")
+        for a in range(1, x + 1):
+            print("*", end=" ")    
+        print()
+    #arrow down
+    for x in range (1, 6):
+        for y in range (1, x + 1):
+            print(" ", end=" ")
+        for z in range (6, x, -1):
+            print("*", end=" ")
+        for a in range(6, x, -1):
+            print("*", end=" ")    
         print()
 
-
-def Code_challenge11():
-    for l in range(1, 7): 
-        for m in range(6, l -1):
-            print(" ", end = " " )
-    for n in range(l, 1, -1):
-        print(n, end=" ")
-    for o in range(1, l, +1):
-        print(o, end=" ")
-   
-    print()
-
-
-def Code_challenge12():
-    for x in range(1,10):
-        for y in range(x,9):
-            print(" ",end=" ")
-        for a in range(1,x):
-            print("*",end=" ")
-        for b in range(0,x):
-            print("*",end=" ")
-            
-        
-        print()    
-        
-        
-
-    for x in range(1,11):
-        for y in range(1,7):
-            print(" ",end=" ")
-        for y in range(1,6):
-            print("*",end=" ")    
+def code_challenge11():
+    #arrow up
+    for x in range (1, 5):
+        for y in range(5, x, -1):
+            print(" ", end=" ")
+        for z in range (1, x):
+            print("*", end=" ")
+        for a in range (0, x):
+            print("*", end=" ")
         print()
 
-
-def Code_challenge13():
-    for x in range(1,7):
-        for y in range(6,x,-1):
-            print(" ",end=" ")
-        for y in range(x,1,-1):
-            print(y,end=" ")
-        for b in range(1,x+1):
-            print(b,end=" ")
-            
-        
-        print()    
-        
-        
-
-    for x in range(5,0,-1):
-        for y in range(6,x,-1):
-            print(" ",end=" ")
-        for y in range(x,1,-1):
-            print(y ,end=" ")
-        for a in range(1,x+1):
-            print(a,end=" ")
+    #arrow down
+    for x in range (1, 6):
+        for y in range (1, x):
+            print(" ", end=" ")
+        for z in range (6, x, -1):
+            print("*", end=" ")
+        for a in range (5, x, -1):
+            print("*", end=" ")    
         print()
 
+def code_challenge12():
+    for x in range (1, 5):
+        for y in range(5, x, -1):
+            print(" ", end=" ")
+        for z in range (1, x):
+            print("*", end=" ")
+        for a in range (0, x):
+            print("*", end=" ")
+        print()
 
-def Code_challenge14():
-    isLoop = True
-    number = 0
+    for i in range (x):
+        for j in range (x-1):
+            print(" ", end=" ")
+        print("* * *")
 
-    while isLoop == True:
-        apple = eval(input("Enter a number> "))
-        if apple > 0:
-            number += isLoop
-            continue
-        elif apple == 0:
-            print("Loop has been terminated.")
-            print(f"the sum of all the numbers given is {number}")
+def code_challenge13():
+    for x in range (1, 7):
+        for y in range (6, x, -1):
+            print(" ", end=" ")
+        for z in range (x, 1, -1):
+            print(z, end=" ")
+        for a in range (1, x + 1):
+            print(a, end=" ")
+        print()
+
+    for x in range (5, 0, -1):
+        for y in range (6, x, -1):
+            print(" ", end=" ")
+        for z in range (x, 1, -1):
+            print(z, end=" ")
+        for a in range (1, x + 1):
+            print(a, end=" ")
+        print()
+
+def code_challenge14():
+    cont = True
+    x = 0
+
+    while cont == True: 
+        num = eval(input("Enter a number: "))
+        if num == 0:
+            print("Program Terminated")
+            print(f"The total of the numbers you enter is {x}.")
             break
-            isLoop = False
         else:
-            print("Please enter a number.")
+            x += num 
             continue
 
-
-def Code_challenge15():
+def code_challenge15():
     #HYBRID LOOP
 
     import os
@@ -691,66 +627,65 @@ def Code_challenge15():
             print("Invalid input, the answer should be yes or no only.")
             continue
 
-
-def Code_challenge16():
+def code_challenge16():
     def denomination(amount):
         print("\nDenomination Breakdown:")
-        TH = amount // 1000
-        THSUKLI = amount % 1000
+        oneth = amount // 1000
+        oneth_2 = amount % 1000
 
-        FH = THSUKLI // 500
-        FHSUKLI = THSUKLI % 500
+        fiveh = oneth_2 // 500
+        fiveh_2 = oneth_2 % 500
 
-        TWH = FHSUKLI // 200
-        TWHSUKLI = FHSUKLI % 200
+        twoh = fiveh_2 // 200
+        twoh_2 = fiveh_2 % 200
 
-        OH = TWHSUKLI // 100
-        OHSUKLI = TWHSUKLI % 100
+        oneh = twoh_2 // 100
+        oneh_2 = twoh_2 % 100
 
-        FI = OHSUKLI // 50
-        FISUKLI = OHSUKLI % 50
+        fifty = oneh_2 // 50
+        fifty_2 = oneh_2 % 50
 
-        TWEN = FISUKLI // 20
-        TWENSUKLI = FISUKLI % 20
+        twenty = fifty_2 // 20
+        twenty_2 = fifty_2 % 20
 
-        TEN = TWENSUKLI // 10
-        TENSUKLI = TWENSUKLI % 10
+        ten = twenty_2 // 10
+        ten_2 = twenty_2 % 10
 
-        FIVE = TENSUKLI // 5
-        FIVESUKLI = TENSUKLI % 5
+        five = ten_2 // 5
+        five_2 = ten_2 % 5
 
-        I = FIVESUKLI // 1
+        one = five_2 // 1
 
-        print("1000---", TH)
-        print("500----", FH)
-        print("200----", TWH)
-        print("100----", OH)
-        print("50-----", FI)
-        print("20-----", TWEN)
-        print("10-----", TEN)
-        print("5------", FIVE)
-        print("1------", I)
+        print("1000---", oneth)
+        print("500----", fiveh)
+        print("200----", twoh)
+        print("100----", oneh)
+        print("50-----", fifty)
+        print("20-----", twenty)
+        print("10-----", ten)
+        print("5------", five)
+        print("1------", one)
 
 
     accounts = {}
 
-    def account():
-        x = input("Enter an account name: ")
-        if x in accounts:
+    def create_account():
+        username = input("Enter your username:  ")
+        if username in accounts:
             print("Account already exists!")
         else:
-            accounts[x] = 0
-            print(f"Account created successfully for {x}.")
+            accounts[username] = 0
+            print(f"Account created successfully for {username}.")
 
 
     def deposit():
-        x = input("Enter your account name: ")
-        if x in accounts:
+        username = input("Enter your username: ")
+        if username in accounts:
             try:
-                amount = int(input("Enter amount to deposit : "))
+                amount = int(input("Enter amount to deposit :   "))
                 if amount > 0:
-                    accounts[x] += amount
-                    print(f"Deposited {amount} successfully. New balance: {accounts[x]}")
+                    accounts[username] += amount
+                    print(f"You deposited {amount} successfully. New balance: {accounts[username]}")
                     denomination(amount)
                 else:
                     print("Amount must be positive!")
@@ -761,13 +696,13 @@ def Code_challenge16():
 
 
     def withdrawal():
-        x = input("Enter your account name: ")
-        if x in accounts:
+        username = input("Enter your username: ")
+        if username in accounts:
             try:
-                amount = int(input("Enter amount to withdraw : "))
-                if 0 < amount <= accounts[x]:
-                    accounts[x] -= amount
-                    print(f"Withdrawn {amount} successfully. Remaining balance: {accounts[x]}")
+                amount = int(input("Enter amount to withdraw (whole numbers only): "))
+                if 0 < amount <= accounts[username]:
+                    accounts[username] -= amount
+                    print(f"Withdrawn {amount} successfully. Remaining balance: {accounts[username]}")
                     denomination(amount)
                 else:
                     print("Insufficient funds or invalid amount!")
@@ -778,40 +713,36 @@ def Code_challenge16():
 
 
     def check_balance():
-        x = input("Enter your username: ")
-        if x in accounts:
-            print(f"Your balance: {accounts[x]}")
+        username = input("Enter your username: ")
+        if username in accounts:
+            print(f"Your balance: {accounts[username]}")
         else:
             print("Account not found!")
 
 
     def options():
         while True:
-            print("Welcome to my Simulation Bank")
-            print()
+            print("WELCOME TO MY BANK SIMULATION PROGRAM")
             print("1. Create Account")
             print("2. Deposit")
             print("3. Withdraw")
             print("4. Check Balance")
             print("5. Exit")
-            print()
-            y = input("Choose an option: ")
-            print()
+            choice = input("Choose in option 1-5:   ")
 
-            if y == '1':
-                account()
-            elif y == '2':
+            if choice == '1':
+                create_account()
+            elif choice == '2':
                 deposit()
-            elif y == '3':
+            elif choice == '3':
                 withdrawal()
-            elif y == '4':
+            elif choice == '4':
                 check_balance()
-            elif y == '5' or "Exit":
-                print("Transaction ended ")
+            elif choice == '5':
+                print("Thank you for using our Banking System!")
                 break
             else:
                 print("Invalid option. Please try again.")
-    options()
 
 import sys
 def main():
@@ -884,7 +815,7 @@ def python_statements():
     ques = input("Would you like to open the code example [activity 1]? yes or no : ")
     if ques.lower() == "yes":
         print("\nOutput:")
-        Activity1()
+        activity1()
     elif ques.lower() == "zero":
         main()
 
@@ -900,7 +831,7 @@ def variables():
 
     ques = input("Would you like to open the code example [code challenge 3]? yes or no : ")
     if ques.lower() == "yes":
-        Code_challenge3()
+        code_challenge3()
     elif ques.lower() == "zero":
         main()
 
@@ -916,7 +847,7 @@ def operators():
 
     ques = input("Would you like to open the code example [code challenge 4]? yes or no : ")
     if ques.lower() == "yes":
-        Code_challenge4()
+        code_challenge4()
     elif ques.lower() == "zero":
         main()
 
@@ -932,7 +863,7 @@ def conditional_statements():
 
     ques = input("Would you like to open the code example [activity 10]? yes or no : ")
     if ques.lower() == "yes":
-        Activity10()
+        activity10()
     elif ques.lower() == "zero":
         main()
 
@@ -948,7 +879,7 @@ def loop():
 
     ques = input("Would you like to open the code example [activity 20]? yes or no : ")
     if ques.lower() == "yes":
-        Activity20()
+        activity20()
     elif ques.lower() == "zero":
         main()
 
@@ -964,7 +895,7 @@ def python_list():
 
     ques = input("Would you like to open the code example [activity 25]? yes or no : ")
     if ques.lower() == "yes":
-        Activity25()
+        activity25()
     elif ques.lower() == "zero":
         main()
 
@@ -980,7 +911,7 @@ def functions():
 
     ques = input("Would you like to open the code example [code challenge 16]? yes or no : ")
     if ques.lower() == "yes":
-        Code_challenge16()
+        code_challenge16()
     elif ques.lower() == "zero":
         main()
 
@@ -1015,7 +946,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 1")
-                Activity1()
+                activity1()
                 print("\n================================================================================")
                 continue
                 
@@ -1023,7 +954,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 2")
-                Activity2()
+                activity2()
                 print("\n================================================================================")
                 continue
 
@@ -1031,7 +962,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 3")
-                Activity3()
+                activity3()
                 print("\n================================================================================")
                 continue
         
@@ -1039,7 +970,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 4")
-                Activity4()
+                activity4()
                 print("\n================================================================================")
                 continue
         
@@ -1047,7 +978,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 5")
-                Activity5()
+                activity5()
                 print("\n================================================================================")
                 continue
 
@@ -1055,7 +986,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 6")
-                Activity6()
+                activity6()
                 print("\n================================================================================")
                 continue
 
@@ -1063,7 +994,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 7")
-                Activity7()
+                activity7()
                 print("\n================================================================================")
                 continue
         
@@ -1071,7 +1002,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 8")
-                Activity8()
+                activity8()
                 print("\n================================================================================")
                 continue
         
@@ -1079,7 +1010,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 9")
-                Activity9()
+                activity9()
                 print("\n================================================================================")
                 continue
         
@@ -1087,7 +1018,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 10")
-                Activity10()
+                activity10()
                 print("\n================================================================================")
                 continue
         
@@ -1095,7 +1026,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 11")
-                Activity11()
+                activity11()
                 print("\n================================================================================")
                 continue
         
@@ -1103,7 +1034,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 12")
-                Activity12()
+                activity12()
                 print("\n================================================================================")
                 continue
         
@@ -1111,7 +1042,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 13")
-                Activity13()
+                activity13()
                 print("\n================================================================================")
                 continue
         
@@ -1119,7 +1050,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 14")
-                Activity14()
+                activity14()
                 print("\n================================================================================")
                 continue
         
@@ -1127,7 +1058,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 15")
-                Activity15()
+                activity15()
                 print("\n================================================================================")
                 continue
         
@@ -1135,7 +1066,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 16")
-                Activity16()
+                activity16()
                 print("\n================================================================================")
                 continue
         
@@ -1143,7 +1074,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 17")
-                Activity17()
+                activity17()
                 print("\n================================================================================")
                 continue
         
@@ -1151,7 +1082,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 18")
-                Activity18()
+                activity18()
                 print("\n================================================================================")
                 continue
         
@@ -1159,7 +1090,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 19")
-                Activity19()
+                activity19()
                 print("\n================================================================================")
                 continue
         
@@ -1167,7 +1098,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 20")
-                Activity20()
+                activity20()
                 print("\n================================================================================")
                 continue
         
@@ -1175,7 +1106,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 21")
-                Activity21()
+                activity21()
                 print("\n================================================================================")
                 continue
         
@@ -1183,7 +1114,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 22")
-                Activity22()
+                activity22()
                 print("\n================================================================================")
                 continue
         
@@ -1199,7 +1130,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 24")
-                Activity24()
+                activity24()
                 print("\n================================================================================")
                 continue
         
@@ -1207,7 +1138,7 @@ def activities_menu():
                 os.system('cls')
                 print("\n================================================================================")
                 print("\nActivity 25")
-                Activity25()
+                activity25()
                 print("\n================================================================================")
                 continue
         
@@ -1240,7 +1171,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 1")
-            Code_challenge1()
+            code_challenge1()
             print("\n================================================================================")
             continue
             
@@ -1248,7 +1179,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 2")
-            Code_challenge2()
+            code_challenge2()
             print("\n================================================================================")
             continue
             
@@ -1256,7 +1187,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 3")
-            Code_challenge3()
+            code_challenge3()
             print("\n================================================================================")
             continue
             
@@ -1264,7 +1195,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 4")
-            Code_challenge4()
+            code_challenge4()
             print("\n================================================================================")
             continue
             
@@ -1272,7 +1203,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 5")
-            Code_challenge5()
+            code_challenge5()
             print("\n================================================================================")
             continue
             
@@ -1280,7 +1211,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 6")
-            Code_challenge6()
+            code_challenge6()
             print("\n================================================================================")
             continue
             
@@ -1288,7 +1219,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 7")
-            Code_challenge7()
+            code_challenge7()
             print("\n================================================================================")
             continue
             
@@ -1296,7 +1227,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 8")
-            Code_challenge8()
+            code_challenge8()
             print("\n================================================================================")
             continue
             
@@ -1304,7 +1235,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 9")
-            Code_challenge9()
+            code_challenge9()
             print("\n================================================================================")
             continue
             
@@ -1312,7 +1243,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 10")
-            Code_challenge10()
+            code_challenge10()
             print("\n================================================================================")
             continue
 
@@ -1320,7 +1251,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 11")
-            Code_challenge11()
+            code_challenge11()
             print("\n================================================================================")
             continue
             
@@ -1328,7 +1259,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 12")
-            Code_challenge12()
+            code_challenge12()
             print("\n================================================================================")
             continue
             
@@ -1336,7 +1267,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 13")
-            Code_challenge13()
+            code_challenge13()
             print("\n================================================================================")
             continue
             
@@ -1344,7 +1275,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 14")
-            Code_challenge14()
+            code_challenge14()
             print("\n================================================================================")
             continue
             
@@ -1352,7 +1283,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 15")
-            Code_challenge15()
+            code_challenge15()
             print("\n================================================================================")
             continue
             
@@ -1360,7 +1291,7 @@ def code_challenge_menu():
             os.system('cls')
             print("\n================================================================================")
             print("\nCode Challenge 16")
-            Code_challenge16()
+            code_challenge16()
             print("\n================================================================================")
             continue
 
@@ -1372,3 +1303,22 @@ def code_challenge_menu():
             print("Type 'zero' to return to Main Menu.")
             main()
 main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
